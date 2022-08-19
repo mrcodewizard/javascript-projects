@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+body {
+    font-family: 'Nunito', sans-serif;
+    margin:0;
+}
+.quiz-container {
+    background: linear-gradient(to right, #092e60, #3effb896);
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-gap: 70px;
+}
+.quiz-sidebar {
+    width: 325px;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: white;
+    overflow-y: auto;
+}
+.quiz-sidebar .sidebar-top i {
+    font-size: 28px;
+    color: #1f7dff;
+    margin-right: 12px;
+}
+
+/* Quiz Sidebar */
+
+.quiz-sidebar h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+.quiz-form h4 {
+    font-size: 18px;
+}
+.quiz-form hr {
+    border: none;
+    border-bottom: 1.7px solid rgba(211, 211, 211, 0.5);
+}
+.quiz-form label {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+}
+.quiz-form .input-group {
+    position: relative;
+    padding: 15px 0px;
+    margin-bottom: 12px;
+    display: flex;
+}
+.quiz-form .input-group input {
+    width: calc(100% - 70px);
+    padding: 8px 10px 8px 30px;
+    outline: none;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.quiz-form .input-group button {
+    padding: 8px 12px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: whitesmoke;
+    border: 1px solid lightgray;
+}
+.quiz-form .input-group button i {
+    font-size: 15px;
+    font-weight: 900;
+}
+.quiz-form .button-group button {
+    padding: 8px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: whitesmoke;
+    border: 1px solid lightgray;
+}
+
+/* Question Content */
+.quiz-main {
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
+}
+.question-panel {
+    width: 525px;
+    min-height: 270px;
+    color: #000;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+.question-header {
+    border-bottom: 2px solid rgba(211, 211, 211, 0.5);
+}
+.quiz-main .btn {
+    padding: 8px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: whitesmoke;
+    border: 1px solid lightgray;
+}
+.quiz-main .radio-group {
+    margin-bottom: 12px;
+}
