@@ -25,79 +25,61 @@
 
                 <label for="questionOne">Question:</label>
                 <div class="input-group">
-                    <button type="button" name="btn-ans"><i class="far fa-question"></i></button>
-                    <input type="text" placeholder="Question" name="question">
+                    <button type="button" class="btn-question"><i class="far fa-question"></i></button>
+                    <input type="text" placeholder="Question" class="question" name="question">
                 </div>
 
                 <div class="answer-group">
                     <label for="answerOne">Answer: </label>
                     <div class="input-group">
-                        <button type="button" name="btn-ansOne"><i class="fa fa-check"></i></button>
-                        <input type="text" placeholder="Answer" name="ansOne">
+                        <label for="input-ansOne"><i class="fa fa-check"></i></label>
+                        <input type="radio" name="rd-ans" id="input-ansOne">
+                        <input type="text" class="answer" placeholder="Answer" name="ansOne">
                     </div>
                     
                     <div class="input-group">
-                        <button type="button" name="btn-ansTwo"><i class="fa fa-check"></i></button>
-                        <input type="text" placeholder="Answer" name="ansTwo">
+                        <label for="input-ansTwo"><i class="fa fa-check"></i></label>
+                        <input type="radio" name="rd-ans" id="input-ansTwo">
+                        <input type="text" class="answer" placeholder="Answer" name="ansTwo">
                     </div>
                     
                     <div class="input-group">
-                        <button type="button" name="btn-ansThree"><i class="fa fa-check"></i></button>
-                        <input type="text" placeholder="Answer" name="ansThree">
+                        <label for="input-ansThree"><i class="fa fa-check"></i></label>
+                        <input type="radio" name="rd-ans" id="input-ansThree">
+                        <input type="text" class="answer" placeholder="Answer" name="ansThree">
                     </div>
                     
                     <div class="input-group">
-                        <button type="button" name="btn-ansFour"><i class="fa fa-check"></i></button>
-                        <input type="text" placeholder="Answer" name="ansFour">
+                        <label for="input-ansFour"><i class="fa fa-check"></i></label>
+                        <input type="radio" name="rd-ans" id="input-ansFour">
+                        <input type="text" class="answer" placeholder="Answer" name="ansFour">
                     </div>
                 </div>
                 <div class="button-group">
-                    <button type="button" name="btn-add"><i class="far fa-plus-square"></i> Add Another</button>
-                    <button type="button" name="btn-add"><i class="far fa-list-alt"></i> Add/Take Quiz</button>
+                    <button type="button" class="btn-add"><i class="far fa-plus-square"></i> Add Another</button>
+                    <button type="button" class="btn-quiz" id="btn-quiz"><i class="far fa-list-alt"></i> Add/Take Quiz</button>
                 </div>
 
                 <hr class="quiz-hr">
 
                 <div class="button-group">
-                    <button type="button" name="btn-add"><i class="far fa-trash-alt"></i> Delete</button>
+                    <button type="button" class="btn-delete"><i class="far fa-trash-alt"></i> Delete</button>
                 </div>
 
             </form>
         </aside>
         <main class="quiz-main">
-            <div class="question-panel">
-                <div class="question-header">
-                    <h3 class="question-title">Question 1</h3>
-                </div>
-                <div class="question-body">
-                    <h4 class="question-text">What is your name?</h4>
-
-                    <div class="radio-group">
-                         <label class="radio-text" for="checkboxOne">bb</span>
-                         <input type="radio" name="rd-ans" id="checkboxOne">
-                    </div>
-
-                    <div class="radio-group">
-                        <label class="radio-text" for="checkboxTwo">bb</span>
-                        <input type="radio" name="rd-ans" id="checkboxTwo">
-                    </div>
-                    <button type="button" class="btn btn-submit">Submit</button>
-                </div>
-            </div>
-
-            <div class="question-panel result-panel">
-                <div class="question-header">
-                    <h3 class="question-title">Result</h3>
-                </div>
-                <div class="question-body">
-                    <h4 class="question-text">Result</h4>
-                    <p class="question-result">Question 1: Correct</p>
-                    <p class="question-result">Question 1: Incorrect. Ans is C</p>
-                    <button type="button" class="btn btn-retake">Retake</button>
-                </div>
-            </div>
+            <!-- Quiz body comes here -->
         </main>
+
+        <div class="quiz-message-container">
+            <div class="quiz-message-box">
+                <p class="quiz-message">Something went wrong</p>
+            </div>
+        </div>
+
     </div>
+
     <script src="js/quiz.js"></script>
 </body>
 </html>
